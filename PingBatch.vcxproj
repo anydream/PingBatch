@@ -151,6 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="HttpGet.cpp" />
     <ClCompile Include="IcmpPing.cpp" />
     <ClCompile Include="libcurl\lib\asyn-ares.c" />
     <ClCompile Include="libcurl\lib\asyn-thread.c" />
@@ -242,6 +243,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="HttpGet.h" />
     <ClInclude Include="IcmpPing.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

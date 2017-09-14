@@ -1,11 +1,12 @@
 ﻿#include <stdint.h>
 #include <stdio.h>
-#include "IcmpPing.h"
 #include <algorithm>
 #include <unordered_set>
+#include "IcmpPing.h"
+#include "HttpGet.h"
 
 //////////////////////////////////////////////////////////////////////////
-static void PrintResult(const IcmpPing::PingResult &result)
+static void PrintResult(const IcmpPing::PingResult &result, bool printLocation = false)
 {
 	std::string replyAddr = result.ReplyAddr;
 	if (replyAddr != result.RemoteAddr)
@@ -15,12 +16,35 @@ static void PrintResult(const IcmpPing::PingResult &result)
 	while (strHead.size() < 32)
 		strHead.push_back(' ');
 
-	printf("* %s Delay: %ums, TTL: %u, Size: %u, Status: %u\n",
+	printf("* %s Delay: %ums, TTL: %u, Size: %u, Status: %u",
 		strHead.c_str(),
 		result.Delay,
 		result.Ttl,
 		result.DataSize,
 		result.Status);
+
+	if (printLocation && !result.ReplyAddr.empty())
+	{
+		std::vector<uint8_t> buf;
+		if (HttpGet(std::string("http://www.ip138.com/ips138.asp?ip=") + result.ReplyAddr + "&action=2", buf))
+		{
+			std::string strQryBack(buf.data(), buf.data() + buf.size());
+			const std::string strMark = "本站数据：";
+			size_t pos = strQryBack.find(strMark);
+			if (pos != std::string::npos)
+			{
+				pos += strMark.size();
+				size_t posEnd = strQryBack.find("</li>", pos);
+				if (posEnd != std::string::npos)
+				{
+					std::string strIPLoc = strQryBack.substr(pos, posEnd - pos);
+					printf(", %s", strIPLoc.c_str());
+				}
+			}
+		}
+	}
+
+	printf("\n");
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -93,7 +117,7 @@ int main(int argc, char **argv)
 
 	for (auto &result : pingResults)
 	{
-		PrintResult(result);
+		PrintResult(result, true);
 	}
 
 	return 0;

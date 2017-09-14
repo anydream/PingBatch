@@ -288,9 +288,15 @@
     <ClCompile Include="libcurl\lib\fileinfo.c">
       <Filter>libcurl</Filter>
     </ClCompile>
+    <ClCompile Include="HttpGet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IcmpPing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HttpGet.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
