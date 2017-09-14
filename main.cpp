@@ -29,7 +29,7 @@ static void PrintResult(const IcmpPing::PingResult &result, bool printLocation =
 		if (HttpGet(std::string("http://www.ip138.com/ips138.asp?ip=") + result.ReplyAddr + "&action=2", buf))
 		{
 			std::string strQryBack(buf.data(), buf.data() + buf.size());
-			const std::string strMark = "本站数据：";
+			const std::string strMark = "\xB1\xBE\xD5\xBE\xCA\xFD\xBE\xDD\xA3\xBA";
 			size_t pos = strQryBack.find(strMark);
 			if (pos != std::string::npos)
 			{
