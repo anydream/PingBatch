@@ -340,7 +340,7 @@ void curl_global_cleanup(void)
  * curl_easy_init() is the external interface to alloc, setup and init an
  * easy handle that is returned. If anything goes wrong, NULL is returned.
  */
-struct Curl_easy *curl_easy_init(void)
+CURL *curl_easy_init(void)
 {
   CURLcode result;
   struct Curl_easy *data;
@@ -866,7 +866,7 @@ CURLcode curl_easy_getinfo(struct Curl_easy *data, CURLINFO info, ...)
  * given input easy handle. The returned handle will be a new working handle
  * with all options set exactly as the input source handle.
  */
-struct Curl_easy *curl_easy_duphandle(struct Curl_easy *data)
+CURL *curl_easy_duphandle(struct Curl_easy *data)
 {
   struct Curl_easy *outcurl = calloc(1, sizeof(struct Curl_easy));
   if(NULL == outcurl)

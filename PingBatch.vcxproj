@@ -59,15 +59,19 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="config.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="config.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="config.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="config.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -148,6 +152,93 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="IcmpPing.cpp" />
+    <ClCompile Include="libcurl\lib\asyn-ares.c" />
+    <ClCompile Include="libcurl\lib\asyn-thread.c" />
+    <ClCompile Include="libcurl\lib\base64.c" />
+    <ClCompile Include="libcurl\lib\conncache.c" />
+    <ClCompile Include="libcurl\lib\connect.c" />
+    <ClCompile Include="libcurl\lib\content_encoding.c" />
+    <ClCompile Include="libcurl\lib\cookie.c" />
+    <ClCompile Include="libcurl\lib\curl_addrinfo.c" />
+    <ClCompile Include="libcurl\lib\curl_des.c" />
+    <ClCompile Include="libcurl\lib\curl_endian.c" />
+    <ClCompile Include="libcurl\lib\curl_fnmatch.c" />
+    <ClCompile Include="libcurl\lib\curl_gethostname.c" />
+    <ClCompile Include="libcurl\lib\curl_memrchr.c" />
+    <ClCompile Include="libcurl\lib\curl_multibyte.c" />
+    <ClCompile Include="libcurl\lib\curl_ntlm_wb.c" />
+    <ClCompile Include="libcurl\lib\curl_sspi.c" />
+    <ClCompile Include="libcurl\lib\curl_threads.c" />
+    <ClCompile Include="libcurl\lib\dict.c" />
+    <ClCompile Include="libcurl\lib\dotdot.c" />
+    <ClCompile Include="libcurl\lib\easy.c" />
+    <ClCompile Include="libcurl\lib\escape.c" />
+    <ClCompile Include="libcurl\lib\fileinfo.c" />
+    <ClCompile Include="libcurl\lib\formdata.c" />
+    <ClCompile Include="libcurl\lib\getenv.c" />
+    <ClCompile Include="libcurl\lib\getinfo.c" />
+    <ClCompile Include="libcurl\lib\gopher.c" />
+    <ClCompile Include="libcurl\lib\hash.c" />
+    <ClCompile Include="libcurl\lib\hostasyn.c" />
+    <ClCompile Include="libcurl\lib\hostcheck.c" />
+    <ClCompile Include="libcurl\lib\hostip.c" />
+    <ClCompile Include="libcurl\lib\hostip4.c" />
+    <ClCompile Include="libcurl\lib\hostip6.c" />
+    <ClCompile Include="libcurl\lib\hostsyn.c" />
+    <ClCompile Include="libcurl\lib\http.c" />
+    <ClCompile Include="libcurl\lib\http2.c" />
+    <ClCompile Include="libcurl\lib\http_chunks.c" />
+    <ClCompile Include="libcurl\lib\http_digest.c" />
+    <ClCompile Include="libcurl\lib\http_negotiate.c" />
+    <ClCompile Include="libcurl\lib\http_ntlm.c" />
+    <ClCompile Include="libcurl\lib\http_proxy.c" />
+    <ClCompile Include="libcurl\lib\idn_win32.c" />
+    <ClCompile Include="libcurl\lib\if2ip.c" />
+    <ClCompile Include="libcurl\lib\imap.c" />
+    <ClCompile Include="libcurl\lib\inet_ntop.c" />
+    <ClCompile Include="libcurl\lib\inet_pton.c" />
+    <ClCompile Include="libcurl\lib\krb5.c" />
+    <ClCompile Include="libcurl\lib\llist.c" />
+    <ClCompile Include="libcurl\lib\md4.c" />
+    <ClCompile Include="libcurl\lib\md5.c" />
+    <ClCompile Include="libcurl\lib\memdebug.c" />
+    <ClCompile Include="libcurl\lib\mprintf.c" />
+    <ClCompile Include="libcurl\lib\multi.c" />
+    <ClCompile Include="libcurl\lib\netrc.c" />
+    <ClCompile Include="libcurl\lib\non-ascii.c" />
+    <ClCompile Include="libcurl\lib\nonblock.c" />
+    <ClCompile Include="libcurl\lib\nwlib.c" />
+    <ClCompile Include="libcurl\lib\nwos.c" />
+    <ClCompile Include="libcurl\lib\openldap.c" />
+    <ClCompile Include="libcurl\lib\parsedate.c" />
+    <ClCompile Include="libcurl\lib\pingpong.c" />
+    <ClCompile Include="libcurl\lib\pipeline.c" />
+    <ClCompile Include="libcurl\lib\progress.c" />
+    <ClCompile Include="libcurl\lib\rand.c" />
+    <ClCompile Include="libcurl\lib\rtsp.c" />
+    <ClCompile Include="libcurl\lib\security.c" />
+    <ClCompile Include="libcurl\lib\select.c" />
+    <ClCompile Include="libcurl\lib\sendf.c" />
+    <ClCompile Include="libcurl\lib\share.c" />
+    <ClCompile Include="libcurl\lib\slist.c" />
+    <ClCompile Include="libcurl\lib\socks.c" />
+    <ClCompile Include="libcurl\lib\socks_gssapi.c" />
+    <ClCompile Include="libcurl\lib\socks_sspi.c" />
+    <ClCompile Include="libcurl\lib\speedcheck.c" />
+    <ClCompile Include="libcurl\lib\splay.c" />
+    <ClCompile Include="libcurl\lib\strcase.c" />
+    <ClCompile Include="libcurl\lib\strdup.c" />
+    <ClCompile Include="libcurl\lib\strerror.c" />
+    <ClCompile Include="libcurl\lib\strtok.c" />
+    <ClCompile Include="libcurl\lib\strtoofft.c" />
+    <ClCompile Include="libcurl\lib\system_win32.c" />
+    <ClCompile Include="libcurl\lib\timeval.c" />
+    <ClCompile Include="libcurl\lib\transfer.c" />
+    <ClCompile Include="libcurl\lib\url.c" />
+    <ClCompile Include="libcurl\lib\version.c" />
+    <ClCompile Include="libcurl\lib\vtls\vtls.c" />
+    <ClCompile Include="libcurl\lib\warnless.c" />
+    <ClCompile Include="libcurl\lib\wildcard.c" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>

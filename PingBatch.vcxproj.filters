@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="libcurl">
+      <UniqueIdentifier>{3f033da8-8b08-4bf6-a2d3-507bd752e799}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcurl\vtls">
+      <UniqueIdentifier>{8cdc09ce-4586-4f8c-886a-1305da6cc025}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="IcmpPing.cpp">
@@ -20,6 +26,267 @@
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\asyn-ares.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\asyn-thread.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\base64.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\conncache.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\connect.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\content_encoding.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\cookie.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\curl_addrinfo.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\curl_des.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\curl_endian.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\curl_fnmatch.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\curl_gethostname.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\curl_memrchr.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\curl_multibyte.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\curl_ntlm_wb.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\curl_sspi.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\curl_threads.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\dict.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\dotdot.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\easy.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\escape.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\formdata.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\getenv.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\gopher.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\hash.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\hostasyn.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\hostcheck.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\hostip.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\hostip4.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\hostip6.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\hostsyn.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\http.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\http_chunks.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\http_digest.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\http_negotiate.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\http_ntlm.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\http_proxy.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\http2.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\idn_win32.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\if2ip.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\imap.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\inet_ntop.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\inet_pton.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\krb5.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\llist.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\md4.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\md5.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\memdebug.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\mprintf.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\multi.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\netrc.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\non-ascii.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\nonblock.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\nwlib.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\nwos.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\openldap.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\parsedate.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\pingpong.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\pipeline.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\progress.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\rand.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\rtsp.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\security.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\select.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\sendf.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\share.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\slist.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\socks.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\socks_gssapi.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\socks_sspi.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\speedcheck.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\splay.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\strcase.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\strdup.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\strerror.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\strtok.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\strtoofft.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\system_win32.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\timeval.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\transfer.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\url.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\version.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\warnless.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\getinfo.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\vtls\vtls.c">
+      <Filter>libcurl\vtls</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\wildcard.c">
+      <Filter>libcurl</Filter>
+    </ClCompile>
+    <ClCompile Include="libcurl\lib\fileinfo.c">
+      <Filter>libcurl</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
